@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "astral:deus_ring_2",
+			"materials": {
+				"default": "phantom",
+				"invisible": "phantom_invisible"
+			},
+			"textures": {
+				"default": "textures/entity/deus_ring"
+			},
+			"geometry": {
+				"default": "geometry.deus_ring"
+			},
+			"animations": {
+				"setup1": "animation.deus_ring.idle",
+				"setup2": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					"setup1",
+					"setup2"
+				]
+			},
+			"render_controllers": [ "controller.render.phantom" ],
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 51
+			}
+		}
+	}
+}

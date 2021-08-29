@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#A#",
+            "# #",
+            "# #"
+        ],
+        "key": {
+            "#": {
+                "item": "astral:astral_monolith"
+            },
+            "A": {
+                "item": "astral:titan_heart"
+            }
+        },
+        "result": {
+            "item": "astral:titan_heart_leggings",
+            "count": 1
+        },
+        "description": {
+            "identifier": "astral:titan_heart_leggings"
+        }
+    }
+}

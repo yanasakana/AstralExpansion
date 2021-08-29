@@ -1,0 +1,15 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+        "tags": [
+            "furnace"
+        ],
+        "output": "astral:smooth_astral_stone",
+        "input": {
+            "item": "astral:astral_stone"
+        },
+        "description": {
+            "identifier": "astral:smooth_astral_stone"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "astral:astral_beacon"
+		},
+		"components": {
+			"minecraft:destroy_time": 5,
+			"minecraft:map_color": "#80809e",
+			"minecraft:geometry": "geometry.astral_beacon",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0.4,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "astral_beacon",
+					"render_method": "alpha_test",
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "summon",
+				"target": "self",
+				"condition": "q.get_equipped_item_name(0) == 'titan_heart' || q.get_equipped_item_name(0) == 'starcore'"
+			}
+		},
+		"events": {
+			"summon": {
+				"sequence": [
+					{
+						"condition": "q.get_equipped_item_name == 'titan_heart'",
+						"decrement_stack": {},
+						"trigger": {
+							"event": "eventSummon_heart"
+						}
+					},
+					{
+						"condition": "q.get_equipped_item_name == 'starcore'",
+						"trigger": {
+							"event": "eventSummon_core"
+						}
+					}
+				]
+			},
+			"eventSummon_heart": {
+				"run_command": {
+					"command": [
+						"summon astral:deus_spawn_animation_heart"
+					]
+				}
+			},
+			"eventSummon_core": {
+				"run_command": {
+					"command": [
+						"summon astral:deus_spawn_animation_core"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,229 @@
+{
+   "entity_sounds": {
+      "entities": {
+         "astral:atlas": {
+            "events": {
+               "ambient": "mob.atlas.idle",
+               "death": "mob.atlas.death",
+               "hurt": "mob.atlas.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.atlas.step",
+                  "volume" : 0.350
+               }
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:astrum_aureus": {
+            "events": {
+               "ambient": "mob.aureus.idle",
+               "death": "mob.aureus.death",
+               "hurt": "mob.aureus.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.aureus.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:mantis": {
+            "events": {
+               "ambient": "mob.astral.idle",
+               "death": "mob.astral.death",
+               "hurt": "mob.astral.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:nova": {
+            "events": {
+               "ambient": "mob.astral.idle",
+               "death": "mob.astral.death",
+               "hurt": "mob.astral.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:astral_slime" : {
+            "events" : {
+               "ambient" : "",
+               "attack" : {
+                  "pitch" : [ 0.80, 1.20 ],
+                  "sound" : "mob.attack"
+               },
+               "death" : "mob.slime.small",
+               "hurt" : "mob.slime.small",
+               "squish.big" : {
+                  "pitch" : [ 0.640, 0.960 ],
+                  "sound" : "mob.slime.big"
+               },
+               "squish.small" : {
+                  "pitch" : [ 0.640, 0.960 ],
+                  "sound" : "mob.slime.small"
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "astral:sightseer_melee": {
+            "events": {
+               "ambient": "mob.astral.idle",
+               "death": "mob.astral.death",
+               "hurt": "mob.astral.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:sightseer_ranged": {
+            "events": {
+               "ambient": "mob.astral.idle",
+               "death": "mob.astral.death",
+               "hurt": "mob.astral.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_head": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit_hard"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_tail": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit_hard"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_ring_1": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_bomber_1": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_ring_2": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_bomber_2": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_ring_3": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_bomber_3": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_ring_4": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         },
+         "astral:deus_bomber_4": {
+            "events": {
+               "spawn": "mob.deus.spawn",
+               "death": "mob.deus.death",
+               "hurt": "mob.deus.hit"
+            },
+            "pitch": [
+               0.8,
+               1.2
+            ],
+            "volume": 1.0
+         }
+      }
+   }
+}

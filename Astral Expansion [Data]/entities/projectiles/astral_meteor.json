@@ -1,0 +1,81 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "astral:astral_meteor",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:exploding": {
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 3,
+          "causes_fire": true,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "inanimate",
+          "astral"
+        ]
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:health": {
+        "value": 32767,
+        "max": 32767
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "test": "has_damage",
+                "subject": "other",
+                "value": "all"
+              },
+              "event": "minecraft:explode"
+            },
+            "deals_damage": true
+          }
+        ]
+      },
+      "minecraft:on_hurt": {
+        "event": "minecraft:explode",
+        "target": "self"
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    "events": {
+      "minecraft:explode": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:exploding"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

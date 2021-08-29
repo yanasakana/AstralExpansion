@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "astral:astral_grass",
+            "properties": {}
+        },
+        "components": {
+            "tag:InsertTag": {},
+            "minecraft:destroy_time": 9,
+            "minecraft:explosion_resistance": 60,
+            "minecraft:map_color": "#80809e",
+            "minecraft:loot": "loot_tables/blocks/astral_dirt.json",
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [
+                    60,
+                    360
+                ],
+                "on_tick": {
+                    "event": "spread"
+                }
+            }
+        },
+        "events": {
+            "spread": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "fill ~-1 ~-1 ~-1 ~1 ~1 ~1 astral_grass 0 replace astral_dirt",
+                                "fill ~ ~-1 ~ ~ ~-1 ~ astral_dirt 0 replace astral_grass"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

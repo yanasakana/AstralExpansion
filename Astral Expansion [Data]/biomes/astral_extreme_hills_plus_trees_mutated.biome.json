@@ -1,0 +1,54 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "astral_extreme_hills_plus_trees_mutated"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.3,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.2
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "extreme"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "astral:astral_dirt",
+        "foundation_material": "astral:astral_stone",
+        "mid_material": "astral:astral_dirt",
+        "top_material": "astral:astral_grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "mid_material": "astral:astral_dirt",
+              "top_material": "astral:astral_dirt"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ -1.0, -0.012 ]
+          },
+          {
+            "materials": {
+              "mid_material": "astral:astral_stone",
+              "top_material": "astral:astral_stone"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.024, 1.0 ]
+          }
+        ]
+      },
+
+      "astral": {},
+      "monolith": {},
+      "extreme_hills": {},
+      "forest": {},
+      "mutated": {},
+      "overworld": {},
+      "rare": {}
+    }
+  }
+}

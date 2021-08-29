@@ -1,0 +1,19 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "astral:astral_monolith",
+            "properties": {}
+        },
+        "components": {
+            "tag:InsertTag": {},
+            "minecraft:destroy_time": 9,
+            "minecraft:explosion_resistance": 60,
+            "minecraft:map_color": "#3b324d",
+            "minecraft:flammable": {
+				"burn_odds": 1,
+				"flame_odds": 2
+			}
+        }
+    }
+}

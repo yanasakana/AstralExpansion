@@ -1,0 +1,39 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Astral Expansion (Behaviors)",
+        "description": "@VinniSauce @yanasakanadev",
+        "uuid": "d2227947-05f8-4892-b035-150cc633d3ec",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            10
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "3b90e4e1-f8bb-4fe4-bd95-eb9cd822fa5d",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "cfca8ecc-30ea-42fe-a69e-fa2f8201be25",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

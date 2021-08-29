@@ -1,0 +1,165 @@
+## @VinniSauce, @yanasakanadev 
+## 2021/8/11
+
+
+
+##Packs
+pack.description=§dSome cool stuff and things I think
+pack.name=§bAstral Expansion
+
+##Tiles
+
+tile.astral:astral_stone.name=Astral Stone
+tile.astral:astral_dirt.name=Astral Dirt
+tile.astral:astral_grass.name=Astral Grass Block
+tile.astral:astral_tallgrass.name=Astral Grass
+tile.astral:astral_ore.name=Astral Ore
+tile.astral:astral_clay_block.name=Astral Clay
+tile.astral:astral_sand.name=Astral Sand
+tile.astral:astral_sandstone.name=Astral Sandstone
+tile.astral:astral_ice.name=Astral Ice
+tile.astral:astral_terracotta.name=Astral Terracotta
+tile.astral:glazed_astral_terracotta.name=Glazed Astral Terracotta
+tile.astral:astral_snow.name=Astral Snow
+tile.astral:astral_monolith.name=Astral Monolith
+tile.astral:smooth_astral_monolith.name=Smooth Astral Monolith
+tile.astral:monolith_branches.name=Astral Monolith Branches
+tile.astral:monolith_sapling.name=Astral Monolith Sapling
+tile.astral:astral_tulip.name=Astral Tulip
+tile.astral:astral_rose.name=Astral Rose
+tile.astral:nova_slag.name=Nova Slag
+tile.astral:celestial_remains.name=Celestial Remains
+tile.astral:smooth_astral_stone.name=Smooth Astral Stone
+tile.astral:astral_bricks.name=Astral Bricks
+tile.astral:astral_block.name=Astral Block
+tile.astral:raw_astral_ore_block.name=Raw Astral Ore Block
+tile.astral:astral_beacon.name=Astral Beacon
+tile.astral:astral_cactus.name=Astral Cactus
+tile.underwater_torch.name=Astral Torch
+tile.astral:starforge.name=Starforge
+
+##Items
+
+item.astral:stardust=Stardust
+item.astral:astral_ingot=Astral Ingot
+item.astral:astral_nugget=Astral Nugget
+item.astral:raw_astral_ore=Raw Astral Ore
+item.astral:titan_heart=Titan Heart
+item.astral:astral_brick=Astral Brick
+item.astral:monolith_sword=Astral Monolith Sword
+item.astral:monolith_pickaxe=Astral Monolith Pickaxe
+item.astral:monolith_axe=Astral Monolith Axe
+item.astral:monolith_shovel=Astral Monolith Shovel
+item.astral:monolith_hoe=Astral Monolith Hoe
+item.astral:astral_stone_sword=Astral Stone Sword
+item.astral:astral_stone_pickaxe=Astral Stone Pickaxe
+item.astral:astral_stone_axe=Astral Stone Axe
+item.astral:astral_stone_shovel=Astral Stone Shovel
+item.astral:astral_stone_hoe=Astral Stone Hoe
+item.astral:astral_sword=Astral Sword
+item.astral:astral_pickaxe=Astral Pickaxe
+item.astral:astral_axe=Astral Axe
+item.astral:astral_shovel=Astral Shovel
+item.astral:astral_hoe=Astral Hoe
+item.astral:astral_helmet=Astral Helmet
+item.astral:astral_chestplate=Astral Chestplate
+item.astral:astral_leggings=Astral Leggings
+item.astral:astral_boots=Astral Boots
+item.astral:titan_heart_helmet=Titan Heart Helmet
+item.astral:titan_heart_chestplate=Titan Heart Chestplate
+item.astral:titan_heart_leggings=Titan Heart Leggings
+item.astral:titan_heart_boots=Titan Heart Boots
+item.astral:astral_snowball=Astral Snowball
+item.astral:aureus_cell=Aureus Fuel Cell
+item.astral:aureus_injection=Aureus Injection
+item.astral:astral_fish=Twinkling Pollox
+item.astral:astral_starfish=Arcturus Astroidean
+item.astral:astral_shrimp=Procyonid Prawn
+item.astral:astral_mollusk=Gacruxian Mollusk
+item.astral:astral_slug=Ursa Sergeant
+item.astral:astral_fish_bucket=Bucket of Twinkling Pollox
+item.astral:astral_starfish_bucket=Bucket of Arcturus Astroidean
+item.astral:astral_shrimp_bucket=Bucket of Procyonid Prawn
+item.astral:astral_mollusk_bucket=Bucket of Gacruxian Mollusk
+item.astral:astral_slug_bucket=Bucket of Ursa Sergeant
+item.astral:starcore=Starcore
+item.astral:astral_chunk=Astral Chunk
+item.astral:monolith_stick=Astral Monolith Stick
+item.astral:astral_slime=Astral Slime
+item.astral:monolith_sapling_item=Astral Monolith Sapling
+item.astral:astral_rose_item=Astral Rose
+item.astral:astral_tulip_item=Astral Tulip
+
+item.astral:quasar=Quasar
+item.astral:borealis_bomber=Borealis Bomber
+item.astral:stellar_cannon=Stellar Cannon
+item.astral:comet_launcher=Comet Launcher
+item.astral:stellar_knife=Stellar Knife
+
+item.astral:astral_blaster=Astral Blaster
+item.astral:aurora_blazer=Aurora Blazer
+item.astral:heavenfallen_stardisk=Heavenfallen Stardisk
+item.astral:starspray_staff=Starspray Staff
+item.astral:starfall=Starfall
+
+##Entities
+
+item.spawn_egg.entity.astral:astral_fish.name=Spawn Twinkling Pollox
+entity.astral:astral_fish.name=Twinkling Pollox
+item.spawn_egg.entity.astral:astral_starfish.name=Spawn Arcturus Astroidean
+entity.astral:astral_starfish.name=Arcturus Astroidean
+item.spawn_egg.entity.astral:astral_shrimp.name=Spawn Procyonid Prawn
+entity.astral:astral_shrimp.name=Procyonid Prawn
+item.spawn_egg.entity.astral:astral_mollusk.name=Spawn Gacruxian Mollusk
+entity.astral:astral_mollusk.name=Gacruxian Mollusk
+item.spawn_egg.entity.astral:astral_slug.name=Spawn Ursa Sergeant
+entity.astral:astral_slug.name=Ursa Sergeant
+
+item.spawn_egg.entity.astral:sightseer_melee.name=Spawn Sightseer (Melee)
+entity.astral:sightseer_melee.name=Sightseer
+item.spawn_egg.entity.astral:sightseer_ranged.name=Spawn Sightseer (Ranged)
+entity.astral:sightseer_ranged.name=Sightseer
+item.spawn_egg.entity.astral:astral_slime.name=Spawn Astral Slime
+entity.astral:astral_slime.name=Astral Slime
+item.spawn_egg.entity.astral:atlas.name=Spawn Atlas
+entity.astral:atlas.name=Atlas
+item.spawn_egg.entity.astral:astral_spider.name=Spawn Astralachnea
+entity.astral:astral_spider.name=Astralachnea
+item.spawn_egg.entity.astral:hiveling.name=Spawn Hiveling
+entity.astral:Hiveling.name=Hiveling
+item.spawn_egg.entity.astral:hive.name=Spawn Hive
+entity.astral:Hive.name=Hive
+item.spawn_egg.entity.astral:nova.name=Spawn Nova
+entity.astral:nova.name=Nova
+item.spawn_egg.entity.astral:mantis.name=Spawn Mantis
+entity.astral:mantis.name=Mantis
+item.spawn_egg.entity.astral:astrum_aureus.name=Spawn Astrum Aureus
+entity.astral:astrum_aureus.name=Astrum Aureus
+item.spawn_egg.entity.astral:deus_head.name=Spawn Astrum Deus
+entity.astral:deus_head.name=Astrum Deus
+entity.astral:deus_ring_1.name=Astrum Deus
+entity.astral:deus_ring_2.name=Astrum Deus
+entity.astral:deus_ring_3.name=Astrum Deus
+entity.astral:deus_ring_4.name=Astrum Deus
+entity.astral:deus_bomber_1.name=Astrum Deus
+entity.astral:deus_bomber_2.name=Astrum Deus
+entity.astral:deus_bomber_3.name=Astrum Deus
+entity.astral:deus_bomber_4.name=Astrum Deus
+entity.astral:deus_tail.name=Astrum Deus
+
+##Projectiles
+
+entity.astral:astral_crystal.name=Astral Crystal
+entity.astral:astral_bullet.name=Astral Bullet
+entity.astral:astral_shard.name=Astral Shard
+entity.astral:astral_meteor.name=Astral Meteor
+entity.astral:astral_missile.name=Comet Missile
+entity.astral:astral_missile_friendly.name=Comet Missile
+entity.astral:stardisk_thrown.name=Heavenfallen Stardisk
+entity.astral:astral_flame.name=Astral Flames
+entity.astral:astral_bomb.name=Aureus Spawn
+entity.astral:astral_heal.name=Celestial Blessing
+entity.astral:astral_bomb_friendly.name=Aureus Spawn
+entity.astral:knife_thrown.name=Stellar Knife
+entity.astral:mantis_slash.name=Mantis Slash
+

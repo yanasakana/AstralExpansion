@@ -1,0 +1,17 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "astral:nova_slag_feature"
+		},
+		"count": 24,
+		"replace_rules": [
+			{
+				"places_block": "astral:nova_slag",
+				"may_replace": [
+					"astral:astral_stone"
+				]
+			}
+		]
+	}
+}

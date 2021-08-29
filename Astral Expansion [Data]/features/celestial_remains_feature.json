@@ -1,0 +1,17 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "astral:celestial_remains_feature"
+		},
+		"count": 24,
+		"replace_rules": [
+			{
+				"places_block": "astral:celestial_remains",
+				"may_replace": [
+					"astral:astral_stone"
+				]
+			}
+		]
+	}
+}

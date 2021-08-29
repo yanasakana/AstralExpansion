@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "astral:starcore",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 100
+			},
+			"minecraft:icon": {
+				"texture": "starcore"
+			},
+			"minecraft:display_name": {
+				"value": "Starcore"
+			}
+		},
+		"events": {}
+	}
+}

@@ -1,0 +1,44 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "overworld_underground_astral_ice_feature",
+      "places_feature": "astral:astral_ice_feature"
+    },
+    "conditions": {
+      "placement_pass": "underground_pass",
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "astral"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "ice"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 15,
+      "coordinate_eval_order": "zyx",
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [ 0, 80 ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      }
+    }
+  }
+}

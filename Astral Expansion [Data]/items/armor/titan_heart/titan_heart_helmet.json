@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "astral:titan_heart_helmet",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 25,
+				"slot": "armor_head"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"astral:astral_monolith"
+						],
+						"repair_amount": "100"
+					}
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 320,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				},
+				"repair_items": {}
+			},
+			"minecraft:armor": {
+				"protection": 2
+			},
+			"minecraft:icon": {
+				"texture": "titan_heart_helmet"
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.head"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.helmet"
+			},
+			"minecraft:display_name": {
+				"value": "Titan Heart Helmet"
+			},
+			"minecraft:knockback_resistance": {
+				"protection": 1
+			}
+		},
+		"events": {}
+	}
+}

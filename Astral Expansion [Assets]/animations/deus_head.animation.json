@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.deus_head.idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"head" : {
+					"rotation" : [ "query.target_x_rotation", 0.0, 0.0 ]
+				},
+				"pincer1": {
+					"rotation": [-15, 0, 45]
+				},
+				"pincer2": {
+					"rotation": [-15, 0, -45]
+				},
+				"pincer3": {
+					"rotation": [-15, 0, -45]
+				},
+				"pincer4": {
+					"rotation": [-15, 0, 45]
+				},
+				"pincer5": {
+					"rotation": [0, 22.5, 0]
+				},
+				"pincer6": {
+					"rotation": [0, 22.5, 0]
+				}
+			}
+		}
+	}
+}

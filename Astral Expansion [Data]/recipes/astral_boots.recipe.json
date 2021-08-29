@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "starforge"
+        ],
+        "pattern": [
+            "a a",
+            "a a"
+        ],
+        "key": {
+            "a": {
+                "item": "astral:astral_ingot"
+            }
+        },
+        "result": {
+            "item": "astral:astral_boots",
+            "count": 1
+        },
+        "description": {
+            "identifier": "astral:astral_boots"
+        }
+    }
+}

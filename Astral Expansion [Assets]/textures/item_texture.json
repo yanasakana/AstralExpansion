@@ -1,0 +1,176 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "monolith_stick": {
+            "textures": "textures/items/monolith_stick"
+        },
+        "astral_sword": {
+            "textures": "textures/items/astral_sword"
+        },
+        "astral_pickaxe": {
+            "textures": "textures/items/astral_pickaxe"
+        },
+        "astral_axe": {
+            "textures": "textures/items/astral_axe"
+        },
+        "astral_shovel": {
+            "textures": "textures/items/astral_shovel"
+        },
+        "astral_hoe": {
+            "textures": "textures/items/astral_hoe"
+        },
+        "monolith_sword": {
+            "textures": "textures/items/monolith_sword"
+        },
+        "monolith_pickaxe": {
+            "textures": "textures/items/monolith_pickaxe"
+        },
+        "monolith_axe": {
+            "textures": "textures/items/monolith_axe"
+        },
+        "monolith_shovel": {
+            "textures": "textures/items/monolith_shovel"
+        },
+        "monolith_hoe": {
+            "textures": "textures/items/monolith_hoe"
+        },
+        "astral_stone_sword": {
+            "textures": "textures/items/astral_stone_sword"
+        },
+        "astral_stone_pickaxe": {
+            "textures": "textures/items/astral_stone_pickaxe"
+        },
+        "astral_stone_axe": {
+            "textures": "textures/items/astral_stone_axe"
+        },
+        "astral_stone_shovel": {
+            "textures": "textures/items/astral_stone_shovel"
+        },
+        "astral_stone_hoe": {
+            "textures": "textures/items/astral_stone_hoe"
+        },
+        "astral_helmet": {
+            "textures": "textures/items/astral_helmet"
+        },
+        "astral_chestplate": {
+            "textures": "textures/items/astral_chestplate"
+        },
+        "astral_leggings": {
+            "textures": "textures/items/astral_leggings"
+        },
+        "astral_boots": {
+            "textures": "textures/items/astral_boots"
+        },
+        "titan_heart_helmet": {
+            "textures": "textures/items/titan_heart_helmet"
+        },
+        "titan_heart_chestplate": {
+            "textures": "textures/items/titan_heart_chestplate"
+        },
+        "titan_heart_leggings": {
+            "textures": "textures/items/titan_heart_leggings"
+        },
+        "titan_heart_boots": {
+            "textures": "textures/items/titan_heart_boots"
+        },
+        "astral_ingot": {
+            "textures": "textures/items/astral_ingot"
+        },
+        "astral_slime": {
+            "textures": "textures/items/astral_slime"
+        },
+        "raw_astral_ore": {
+            "textures": "textures/items/raw_astral_ore"
+        },
+        "astral_nugget": {
+            "textures": "textures/items/astral_nugget"
+        },
+        "stardust": {
+            "textures": "textures/items/stardust"
+        },
+        "astral_fish": {
+            "textures": "textures/items/twinkling_pollox"
+        },
+        "astral_shrimp": {
+            "textures": "textures/items/procyonid_prawn"
+        },
+        "astral_starfish": {
+            "textures": "textures/items/arcturus_astroidean"
+        },
+        "astral_mollusk": {
+            "textures": "textures/items/gacruxian_mollusk"
+        },
+        "astral_slug": {
+            "textures": "textures/items/ursa_sergeant"
+        },
+        "titan_heart": {
+            "textures": "textures/items/titan_heart"
+        },
+        "astral_brick": {
+            "textures": "textures/items/astral_brick"
+        },
+        "astral_injection": {
+            "textures": "textures/items/astral_injection"
+        },
+        "aureus_cell": {
+            "textures": "textures/items/aureus_cell"
+        },
+        "bucket_astral_fish": {
+            "textures": "textures/items/bucket_astral_fish"
+        },
+        "astral_chunk": {
+            "textures": "textures/items/astral_chunk"
+        },
+        "starcore": {
+            "textures": "textures/items/starcore"
+        },
+        "astral_snowball": {
+            "textures": "textures/items/astral_snowball"
+        },
+        "astral_clay": {
+            "textures": "textures/items/astral_clay"
+        },
+        "astral_rose_item": {
+            "textures": "textures/items/astral_rose"
+        },
+        "astral_tulip_item": {
+            "textures": "textures/items/astral_tulip"
+        },
+        "monolith_sapling_item": {
+            "textures": "textures/items/monolith_sapling"
+        },
+
+        "comet_launcher": {
+            "textures": "textures/items/boss_weapons/aureus/comet_launcher"
+        },
+        "astral_blaster": {
+            "textures": "textures/items/boss_weapons/aureus/astral_blaster"
+        },
+        "borealis_bomber": {
+            "textures": "textures/items/boss_weapons/aureus/borealis_bomber"
+        },
+        "stellar_cannon": {
+            "textures": "textures/items/boss_weapons/aureus/stellar_cannon"
+        },
+        "stellar_knife": {
+            "textures": "textures/items/boss_weapons/aureus/quasar"
+        },
+        
+        "quasar": {
+            "textures": "textures/items/boss_weapons/deus/quasar"
+        },
+        "aurora_blazer": {
+            "textures": "textures/items/boss_weapons/deus/aurora_blazer"
+        },
+        "heavenfallen_stardisk": {
+            "textures": "textures/items/boss_weapons/deus/heavenfallen_stardisk"
+        },
+        "starspray_staff": {
+            "textures": "textures/items/boss_weapons/deus/starspray_staff"
+        },
+        "starfall": {
+            "textures": "textures/items/boss_weapons/deus/starfall"
+        }
+    },
+    "texture_name": "atlas.items"
+}

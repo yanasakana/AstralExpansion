@@ -1,0 +1,52 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.nova",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 10, -4],
+					"cubes": [
+						{"origin": [-4, 3, 4], "size": [8, 7, 8], "uv": [0, 55]},
+						{"origin": [-3, 3, -12], "size": [6, 14, 16], "uv": [28, 17]},
+						{"origin": [-4, 0, -8], "size": [8, 7, 9], "pivot": [0, 3.5, -3.5], "rotation": [0, 0, -180], "uv": [29, 47]},
+						{"origin": [-4, 13, -8], "size": [8, 7, 9], "uv": [29, 47]},
+						{"origin": [-5, 2, -2], "size": [10, 7, 8], "pivot": [0, 5.5, 2], "rotation": [0, 0, -180], "uv": [22, 0]},
+						{"origin": [-5, 11, -2], "size": [10, 7, 8], "uv": [22, 0]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "head",
+					"pivot": [0, 9, 1],
+					"cubes": [
+						{"origin": [4, 11, -6], "size": [2, 2, 14], "pivot": [5, 12, -5], "rotation": [52.5, 0, 0], "uv": [44, 1], "mirror": true},
+						{"origin": [-6, 11, -6], "size": [2, 2, 14], "pivot": [-5, 12, -5], "rotation": [52.5, 0, 0], "uv": [44, 1]},
+						{"origin": [-1, 15, -13], "size": [2, 2, 14], "pivot": [0, 16, -12], "rotation": [37.5, 0, 0], "uv": [49, 49]},
+						{"origin": [-1, 15, -13], "size": [2, 2, 10], "pivot": [0, 16, -12], "rotation": [-77.5, 0, 0], "uv": [56, 17]},
+						{"origin": [4, 10, -2], "size": [2, 2, 17], "pivot": [5, 10, -1], "rotation": [35, 0, 0], "uv": [0, 33], "mirror": true},
+						{"origin": [-6, 10, -2], "size": [2, 2, 17], "pivot": [-5, 10, -1], "rotation": [35, 0, 0], "uv": [0, 33]},
+						{"origin": [4, 9, 2], "size": [2, 2, 18], "pivot": [5, 10, 3], "rotation": [17.5, 0, 0], "uv": [0, 0], "mirror": true},
+						{"origin": [-6, 9, 2], "size": [2, 2, 18], "pivot": [-5, 10, 3], "rotation": [17.5, 0, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "flame",
+					"parent": "head",
+					"pivot": [0, 10, 12],
+					"cubes": [
+						{"origin": [0, 5, 4], "size": [0, 11, 22], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

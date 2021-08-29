@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.deus_music": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"spawns": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"refresh_p1": {
+					"transitions": [
+						{
+							"refresh_p2": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"refresh_p2": {
+					"on_entry": [
+						"/scoreboard objectives add boss_music dummy boss_music",
+						"/scoreboard players set @a[rm=46, r=48] boss_music 1",
+						"/scoreboard players set @a[rm=48] boss_music 0",
+						"/execute @a[rm=48] ~ ~ ~ stopsound @s music.pest_of_the_cosmos"
+					],
+					"transitions": [
+						{
+							"refresh_p1": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"spawns": {
+					"on_entry": [
+						"/scoreboard objectives add boss_music dummy boss_music",
+						"/scoreboard players set @a[r=48] boss_music 1",
+						"/scoreboard players set @a[rm=48] boss_music 0"
+					],
+					"transitions": [
+						{
+							"refresh_p1": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"death": {
+					"on_entry": [
+						"/scoreboard players set @a boss_music 0",
+						"/stopsound @a music.pest_of_the_cosmos"
+					]
+				}
+			},
+			"initial_state": "default"
+		}
+	}
+}

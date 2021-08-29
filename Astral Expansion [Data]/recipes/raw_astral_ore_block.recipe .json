@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "starforge"
+        ],
+        "pattern": [
+            "aaa",
+            "aaa",
+            "aaa"
+        ],
+        "key": {
+            "a": {
+                "item": "astral:raw_astral_ore"
+            }
+        },
+        "result": {
+            "item": "astral:raw_astral_ore_block",
+            "count": 1
+        },
+        "description": {
+            "identifier": "astral:raw_astral_ore_block"
+        }
+    }
+}

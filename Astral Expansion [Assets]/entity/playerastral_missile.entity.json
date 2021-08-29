@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "astral:playerastral_missile",
+			"materials": {
+				"default": "phantom",
+				"invisible": "phantom_invisible"
+			},
+			"textures": {
+				"default": "textures/entity/projectiles/astral_missile"
+			},
+			"geometry": {
+				"default": "geometry.astral_missile"
+			},
+			"animations": {
+				"setup1": "animation.deus_head.idle"
+			},
+			"scripts": {
+				"animate": [
+					"setup1"
+				]
+			},
+			"render_controllers": [ "controller.render.phantom" ]
+		}
+	}
+}

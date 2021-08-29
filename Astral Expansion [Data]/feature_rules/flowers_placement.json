@@ -1,0 +1,46 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "astral:flowers_placement",
+			"places_feature": "astral:flowers"
+		},
+		"conditions": {
+			"placement_pass": "before_surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"all_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "astral"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "flower_forest"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": "math.random_integer(32, 64)",
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": "query.above_top_solid(v.worldx, v.worldz)"
+		}
+	}
+}

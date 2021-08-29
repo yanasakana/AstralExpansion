@@ -1,0 +1,69 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.dragon_music": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"spawns": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"refresh_p1": {
+					"transitions": [
+						{
+							"refresh_p2": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"refresh_p2": {
+					"on_entry": [
+						"/scoreboard objectives add boss_music dummy boss_music",
+						"/scoreboard players set @a[rm=62, r=64] boss_music 4",
+						"/scoreboard players set @a[rm=64] boss_music 0",
+						"/execute @a[rm=48] ~ ~ ~ stopsound @s music.scourge_of_the_universe"
+					],
+					"transitions": [
+						{
+							"refresh_p1": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"spawns": {
+					"on_entry": [
+						"/scoreboard objectives add boss_music dummy boss_music",
+						"/scoreboard players set @a[r=64] boss_music 4",
+						"/scoreboard players set @a[rm=64] boss_music 0",
+						"/title @a actionbar The Ender Dragon has awoken!"
+					],
+					"transitions": [
+						{
+							"refresh_p1": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"death": {
+					"on_entry": [
+						"/scoreboard players set @a boss_music 0",
+						"/stopsound @a music.scourge_of_the_universe",
+						"/title @a actionbar The Ender Dragon has been defeated!"
+					]
+				}
+			},
+			"initial_state": "default"
+		}
+	}
+}

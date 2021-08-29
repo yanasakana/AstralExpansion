@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "astral:aureus_cell"
+            },
+            {
+                "item": "astral:astral_slime"
+            },
+            {
+                "item": "astral:astral_nugget"
+            },
+            {
+                "item": "minecraft:glow_ink_sac"
+            },
+            {
+                "item": "minecraft:blaze_powder"
+            }
+        ],
+        "result": {
+            "item": "astral:astral_injection",
+            "count": 1
+        },
+        "description": {
+            "identifier": "astral:astral_injection"
+        }
+    }
+}

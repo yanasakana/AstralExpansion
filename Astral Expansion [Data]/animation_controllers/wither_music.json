@@ -1,0 +1,69 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.wither_music": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"spawns": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"refresh_p1": {
+					"transitions": [
+						{
+							"refresh_p2": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"refresh_p2": {
+					"on_entry": [
+						"/scoreboard objectives add boss_music dummy boss_music",
+						"/scoreboard players set @a[rm=46, r=48] boss_music 3",
+						"/scoreboard players set @a[rm=48] boss_music 0",
+						"/execute @a[rm=48] ~ ~ ~ stopsound @s music.open_frenzy"
+					],
+					"transitions": [
+						{
+							"refresh_p1": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"spawns": {
+					"on_entry": [
+						"/scoreboard objectives add boss_music dummy boss_music",
+						"/scoreboard players set @a[r=48] boss_music 3",
+						"/scoreboard players set @a[rm=48] boss_music 0",
+						"/title @a actionbar The Wither has awoken!"
+					],
+					"transitions": [
+						{
+							"refresh_p1": "query.is_alive"
+						},
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"death": {
+					"on_entry": [
+						"/scoreboard players set @a boss_music 0",
+						"/stopsound @a music.open_frenzy",
+						"/title @a actionbar The Wither has been defeated!"
+					]
+				}
+			},
+			"initial_state": "default"
+		}
+	}
+}

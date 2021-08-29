@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "astral:tulip"
+		},
+		
+		"places_block": "astral:astral_tulip",
+		
+		"enforce_placement_rules": true,
+		"enforce_survivability_rules": true,
+		"may_replace": ["minecraft:air", "minecraft:snow_layer"]
+	}
+}

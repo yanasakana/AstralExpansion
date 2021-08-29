@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "A",
+            "A"
+        ],
+        "key": {
+            "#": {
+                "item": "astral:astral_monolith"
+            },
+            "A": {
+                "item": "astral:monolith_stick"
+            }
+        },
+        "result": {
+            "item": "astral:monolith_shovel",
+            "count": 1
+        },
+        "description": {
+            "identifier": "astral:monolith_shovel"
+        }
+    }
+}

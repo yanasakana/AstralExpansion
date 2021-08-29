@@ -1,0 +1,37 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "astral_extreme_hills_plus_trees"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.3,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.2
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "extreme"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "astral:astral_dirt",
+        "foundation_material": "astral:astral_stone",
+        "mid_material": "astral:astral_dirt",
+        "top_material": "astral:astral_grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:overworld_generation_rules": {
+        "mutate_transformation": "astral_extreme_hills_plus_trees_mutated"
+      },
+
+      "astral": {},
+      "extreme_hills": {},
+      "monolith": {},
+      "forest": {},
+      "mountain": {},
+      "overworld": {},
+      "rare": {}
+    }
+  }
+}

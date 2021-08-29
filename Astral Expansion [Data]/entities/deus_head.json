@@ -1,0 +1,180 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "astral:deus_head",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "deus_worming": "controller.animation.deus_worming",
+        "deus_death": "controller.animation.deus_death",
+        "deus_spawn": "controller.animation.deus_spawn",
+        "deus_music": "controller.animation.deus_music"
+      },
+      "scripts": {
+        "animate": [
+          "deus_worming",
+          "deus_death",
+          "deus_spawn",
+          "deus_music"
+        ]
+      }
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "hud_range": 48,
+        "name": "Astrum Deus"
+      },
+      "minecraft:addrider": {
+        "entity_type": "astral:deus_turret"
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "deus_turret"
+        ],
+        "seats": {
+          "position": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 300 : 0"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "astral",
+          "boss",
+          "astrum_deus",
+          "mob"
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/astrum_deus.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 1600,
+        "max": 1600
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 0
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "suffocation",
+          "deals_damage": false
+        }
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:attack": {
+        "damage": 32767
+      },
+      "minecraft:breathable": {
+        "total_supply": 32767,
+        "suffocate_time": 32767,
+        "breathes_air": true,
+        "breathes_lava": true,
+        "breathes_water": true,
+        "breathes_solids": true
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:movement.glide": {
+        "start_speed": 0.2,
+        "speed_when_turning": 0.2
+      },
+      "minecraft:follow_range": {
+        "value": 48,
+        "max": 48
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "reselect_targets": true,
+        "scan_interval": 20,
+        "within_radius": 64.0,
+        "must_see_forget_duration": 0.5,
+        "target_search_height": 80.0,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 48
+          },
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "operator": "not",
+              "value": "astral"
+            },
+            "max_dist": 48
+          }
+        ]
+      },
+      "minecraft:behavior.swoop_attack": {
+        "priority": 2,
+        "damage_reach": 0.2,
+        "speed_multiplier": 1.0,
+        "delay_range": [
+          1.0,
+          2.0
+        ]
+      },
+      "minecraft:behavior.circle_around_anchor": {
+        "priority": 3,
+        "radius_change": 1.0,
+        "radius_adjustment_chance": 0.004,
+        "height_adjustment_chance": 0.002857,
+        "goal_radius": 1.0,
+        "angle_change": 15.0,
+        "radius_range": [
+          5.0,
+          15.0
+        ],
+        "height_offset_range": [
+          -4.0,
+          5.0
+        ],
+        "height_above_target_range": [
+          2.0,
+          10.0
+        ]
+      }
+    }
+  }
+}

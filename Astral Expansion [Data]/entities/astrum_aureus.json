@@ -1,0 +1,508 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "astral:astrum_aureus",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:iron_golem",
+			"animations": {
+				"aureus_music": "controller.animation.aureus_music"
+			},
+			"scripts": {
+				"animate": [
+					"aureus_music"
+				]
+			}
+    },
+    "component_groups": {
+      "minecraft:add_turret_part_1": {
+        "minecraft:addrider": {
+          "entity_type": "astral:aureus_turret"
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": [
+            0.01,
+            0.01
+          ],
+          "time_down_event": {
+            "event": "minecraft:add_turret_part_2"
+          }
+        }
+      },
+      "minecraft:add_turret_part_2": {
+        "minecraft:addrider": {
+          "entity_type": "astral:aureus_turret"
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": [
+            0.01,
+            0.01
+          ],
+          "time_down_event": {
+            "event": "minecraft:add_turret_part_3"
+          }
+        }
+      },
+      "minecraft:add_turret_part_3": {
+        "minecraft:addrider": {
+          "entity_type": "astral:aureus_turret"
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": [
+            0.01,
+            0.01
+          ],
+          "time_down_event": {
+            "event": "minecraft:add_turret_part_4"
+          }
+        }
+      },
+      "minecraft:add_turret_part_4": {
+        "minecraft:addrider": {
+          "entity_type": "astral:aureus_turret"
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": [
+            0.01,
+            0.01
+          ],
+          "time_down_event": {
+            "event": "minecraft:add_turret_part_5"
+          }
+        }
+      },
+      "minecraft:add_turret_part_5": {
+        "minecraft:addrider": {
+          "entity_type": "astral:aureus_turret"
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": [
+            0.01,
+            0.01
+          ],
+          "time_down_event": {
+            "event": "minecraft:add_turret_part_6"
+          }
+        }
+      },
+      "minecraft:add_turret_part_6": {
+        "minecraft:addrider": {
+          "entity_type": "astral:aureus_turret"
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": [
+            0.01,
+            0.01
+          ],
+          "time_down_event": {
+            "event": "minecraft:add_turret_finished"
+          }
+        }
+      },
+      "minecraft:hostile": {
+        "minecraft:movement": {
+          "value": 0.35
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 1,
+          "track_target": true
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 6,
+          "speed_multiplier": 0.4
+        },
+        "minecraft:behavior.move_towards_target": {
+          "priority": 2,
+          "speed_multiplier": 0.9,
+          "within_radius": 32
+        },
+        "minecraft:behavior.look_at_player": {
+          "priority": 7,
+          "look_distance": 6,
+          "angle_of_view_horizontal": 45,
+          "probability": 1
+        },
+        "minecraft:rideable": {
+          "family_types": [
+            "aureus_turret"
+          ],
+          "seat_count": 6,
+          "pull_in_entities": true,
+          "seats": [
+            {
+              "position": [-3.0, 2, 2.5]
+            },
+            {
+              "position": [3.0, 2, 2.5]
+            },
+            {
+              "position": [3.0, 2, 0]
+            },
+            {
+              "position": [3.0, 2, -2.5]
+            },
+            {
+              "position": [-3.0, 2, -2.5]
+            },
+            {
+              "position": [-3.0, 2, 0]
+            }
+          ]
+        },
+        "minecraft:behavior.look_at_entity": {
+          "priority": 10,
+          "look_distance": 8,
+          "angle_of_view_horizontal": 45,
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "astral"
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "must_see": true,
+          "within_radius": 16.0,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "max_dist": 48
+            }
+          ]
+        }
+      },
+      "stunned": {
+        "minecraft:is_stunned": {
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 2,
+          "time_down_event": {
+            "event": "minecraft:start_roar"
+          }
+        }
+      },
+      "roaring": {
+        "minecraft:behavior.knockback_roar": {
+          "priority": 1,
+          "duration": 1,
+          "attack_time": 0.5,
+          "knockback_damage": 12,
+          "knockback_strength": 6,
+          "knockback_range": 15,
+          "knockback_filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "astral"
+          },
+          "on_roar_end": {
+            "event": "minecraft:end_roar"
+          },
+          "cooldown_time": 0.1
+        }
+      }
+    },
+    "components": {
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "hud_range": 48,
+        "name": "Astrum Aureus"
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 200 : 0"
+      },
+      "minecraft:ravager_blocked": {
+        "knockback_strength": 3.0,
+        "reaction_choices": [
+          {
+            "weight": 1,
+            "value": {
+              "event": "minecraft:become_stunned",
+              "target": "self"
+            }
+          },
+          {
+            "weight": 1,
+            "value": {
+              "event": "minecraft:teleport_above_player",
+              "target": "self"
+            }
+          },
+          {
+            "weight": 8
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 0.1
+      },
+      "minecraft:breathable": {
+        "suffocate_time": 0,
+        "total_supply": 15
+      },
+      "minecraft:collision_box": {
+        "height": 4.0,
+        "width": 5.0
+      },
+      "minecraft:health": {
+        "max": 800,
+        "value": 800
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 0
+          }
+        ]
+      },
+      "minecraft:jump.static": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/astrum_aureus.json"
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:nameable": {},
+      "minecraft:navigation.walk": {
+        "avoid_damage_blocks": true,
+        "can_path_over_water": false,
+        "can_sink": true
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "bamboo",
+          "bamboo_sapling",
+          "beetroot",
+          "brown_mushroom",
+          "carrots",
+          "carved_pumpkin",
+          "chorus_flower",
+          "chorus_plant",
+          "deadbush",
+          "double_plant",
+          "leaves",
+          "leaves2",
+          "log",
+          "log2",
+          "lit_pumpkin",
+          "melon_block",
+          "melon_stem",
+          "potatoes",
+          "pumpkin",
+          "pumpkin_stem",
+          "red_flower",
+          "red_mushroom",
+          "crimson_fungus",
+          "warped_fungus",
+          "reeds",
+          "sapling",
+          "snow_layer",
+          "sweet_berry_bush",
+          "tallgrass",
+          "turtle_egg",
+          "vine",
+          "waterlily",
+          "wheat",
+          "yellow_flower"
+        ]
+      },
+      "minecraft:follow_range": {
+        "value": 48
+      },
+      "minecraft:type_family": {
+        "family": [
+          "astral",
+          "boss",
+          "astrum_aureus",
+          "mob"
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "minecraft:hostile",
+            "minecraft:add_turret_part_1"
+          ]
+        },
+        "run_command": {
+          "command": [
+            "tp @s ~ ~20 ~"
+          ]
+        }
+      },
+      "minecraft:become_stunned": {
+        "add": {
+          "component_groups": [
+            "stunned"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:hostile"
+          ]
+        }
+      },
+      "minecraft:teleport_above_player": {
+        "run_command": {
+          "command": [
+            "execute @p ~ ~ ~ tp @e[type=astral:astrum_aureus] ~ ~20 ~"
+          ]
+        }
+      },
+      "minecraft:start_roar": {
+        "add": {
+          "component_groups": [
+            "roaring"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "stunned"
+          ]
+        }
+      },
+      "minecraft:end_roar": {
+        "add": {
+          "component_groups": [
+            "minecraft:hostile"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "roaring"
+          ]
+        }
+      },
+      "minecraft:add_turret_part_2": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_turret_part_2"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:add_turret_part_1"
+          ]
+        }
+      },
+      "minecraft:add_turret_part_3": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_turret_part_3"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:add_turret_part_2"
+          ]
+        }
+      },
+      "minecraft:add_turret_part_4": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_turret_part_4"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:add_turret_part_3"
+          ]
+        }
+      },
+      "minecraft:add_turret_part_5": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_turret_part_5"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:add_turret_part_4"
+          ]
+        }
+      },
+      "minecraft:add_turret_part_6": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_turret_part_6"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:add_turret_part_5"
+          ]
+        }
+      },
+      "minecraft:add_turret_part_7": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_turret_part_7"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:add_turret_part_6"
+          ]
+        }
+      },
+      "minecraft:add_turret_part_8": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_turret_part_8"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:add_turret_part_7"
+          ]
+        }
+      },
+      "minecraft:add_turret_finished": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_turret_part_8"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "astral:astral_crystal",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:arrow"
+    },
+    "component_groups": {
+      "minecraft:player_attack": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 10,
+              "knockback": false,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {
+                "event": "minecraft:explode",
+                "target": "self"
+              }
+            },
+            "mob_effect": {
+              "effect": "poison",
+              "durationeasy": 0,
+              "durationnormal": 200,
+              "durationhard": 800,
+              "amplifier": 2
+            }
+          },
+          "power": 0.5,
+          "gravity": 0.00,
+          "uncertainty_base": 0,
+          "uncertainty_multiplier": 0,
+          "shoot_sound": "bow",
+          "hit_sound": "bow.hit",
+          "anchor": 1,
+          "offset": [
+            0,
+            -0.1,
+            0
+          ],
+          "inertia": 1.0,
+          "liquid_inertia": 1.0,
+          "shoot_target": true
+        }
+      },
+      "minecraft:enemy_attack": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 20,
+              "filter": "astral",
+              "knockback": false,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {
+                "event": "minecraft:explode",
+                "target": "self"
+              }
+            },
+            "mob_effect": {
+              "effect": "poison",
+              "durationeasy": 0,
+              "durationnormal": 200,
+              "durationhard": 800,
+              "amplifier": 2
+            }
+          },
+          "power": 0.5,
+          "gravity": 0.00,
+          "uncertainty_base": 0,
+          "uncertainty_multiplier": 0,
+          "shoot_sound": "bow",
+          "hit_sound": "bow.hit",
+          "anchor": 1,
+          "offset": [
+            0,
+            -0.1,
+            0
+          ],
+          "inertia": 1.0,
+          "liquid_inertia": 1.0,
+          "shoot_target": true
+        }
+      },
+      "minecraft:exploding": {
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 0,
+          "causes_fire": false,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.4,
+        "height": 0.4
+      },
+      "minecraft:explode": {
+        "fuse_length": 3,
+        "fuse_lit": true,
+        "power": 0,
+        "causes_fire": false,
+        "destroy_affected_by_griefing": true
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 50,
+            "knockback": false,
+            "semi_random_diff_damage": true,
+            "destroy_on_hit": true
+          },
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "minecraft:explode",
+              "target": "self"
+            }
+          },
+          "mob_effect": {
+            "effect": "poison",
+            "durationeasy": 0,
+            "durationnormal": 200,
+            "durationhard": 800,
+            "amplifier": 2
+          }
+        },
+        "power": 0.5,
+        "gravity": 0.00,
+        "uncertainty_base": 0,
+        "uncertainty_multiplier": 0,
+        "shoot_sound": "bow",
+        "hit_sound": "bow.hit",
+        "anchor": 1,
+        "offset": [
+          0,
+          -0.1,
+          0
+        ],
+        "inertia": 1.0,
+        "liquid_inertia": 1.0,
+        "shoot_target": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+    "events": {
+      "minecraft:explode": {
+        "add": {
+          "component_groups": [
+            "minecraft:exploding"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {"test": "is_family", "subject": "other", "value": "player"},
+            "add": {
+              "component_groups" : [ "minecraft:player_attack" ]
+            }
+          },
+          {
+            "filters": {"test": "is_family", "subject": "other", "value": "astral"},
+            "add": {
+              "component_groups": [ "minecraft:enemy_attack" ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

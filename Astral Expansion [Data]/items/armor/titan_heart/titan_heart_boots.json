@@ -1,0 +1,53 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "astral:titan_heart_boots",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 25,
+				"slot": "armor_feet"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"astral:astral_monolith"
+						],
+						"repair_amount": "100"
+					}
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 320,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:armor": {
+				"protection": 2
+			},
+			"minecraft:icon": {
+				"texture": "titan_heart_boots"
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.boots"
+			},
+			"minecraft:display_name": {
+				"value": "Titan Heart Boots"
+			},
+			"minecraft:knockback_resistance": {
+				"protection": 1
+			}
+		},
+		"events": {}
+	}
+}

@@ -1,0 +1,11 @@
+kill @e[type=astral:deus_ring_1]
+kill @e[type=astral:deus_ring_2]
+kill @e[type=astral:deus_ring_3]
+kill @e[type=astral:deus_ring_4]
+kill @e[type=astral:deus_bomber_1]
+kill @e[type=astral:deus_bomber_2]
+kill @e[type=astral:deus_bomber_3]
+kill @e[type=astral:deus_bomber_4]
+kill @e[type=astral:deus_tail]
+kill @e[type=astral:deus_turret]
+title @a actionbar Astrum Deus has been defeated!

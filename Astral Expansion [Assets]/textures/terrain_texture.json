@@ -1,0 +1,299 @@
+{
+    "num_mip_levels": 0,
+    "padding": 8,
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "astral_ore": {
+            "textures": "textures/blocks/astral_ore"
+        },
+        "raw_astral_ore_block": {
+            "textures": "textures/blocks/raw_astral_block"
+        },
+        "astral_beacon": {
+            "textures": "textures/blocks/astral_beacon"
+        },
+        "monolith_sapling": {
+            "textures": "textures/blocks/monolith_sapling"
+        },
+        "astral_torch": {
+            "textures": "textures/blocks/astral_torch"
+        },
+        "astral_dirt": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_dirt_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_dirt_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_dirt_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_dirt_4"
+                    }
+                ]
+            }
+        },
+        "astral_rose": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_rose_1"
+                    }
+                ]
+            }
+        },
+        "astral_tulip": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_tulip_1"
+                    }
+                ]
+            }
+        },
+        "astral_tallgrass": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_tallgrass_1"
+                    }
+                ]
+            }
+        },
+        "astral_stone": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_stone_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_stone_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_stone_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_stone_4"
+                    }
+                ]
+            }
+        },
+        "astral_terracotta": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_terracotta_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_terracotta_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_terracotta_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_terracotta_4"
+                    }
+                ]
+            }
+        },
+        "astral_grass_top": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_grass_top_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_grass_top_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_grass_top_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_grass_top_4"
+                    }
+                ]
+            }
+        },
+        "astral_grass_side": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_grass_side_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_grass_side_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_grass_side_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_grass_side_4"
+                    }
+                ]
+            }
+        },
+        "astral_clay": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_clay_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_clay_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_clay_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_clay_4"
+                    }
+                ]
+            }
+        },
+        "astral_sand": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_sand_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_sand_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_sand_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_sand_4"
+                    }
+                ]
+            }
+        },
+        "astral_sandstone": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_sandstone_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_sandstone_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_sandstone_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_sandstone_4"
+                    }
+                ]
+            }
+        },
+        "astral_snow": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_snow_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_snow_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_snow_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_snow_4"
+                    }
+                ]
+            }
+        },
+        "astral_ice": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_ice_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_ice_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_ice_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_ice_4"
+                    }
+                ]
+            }
+        },
+        "astral_monolith": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/astral_monolith_1"
+                    },
+                    {
+                        "path": "textures/blocks/astral_monolith_2"
+                    },
+                    {
+                        "path": "textures/blocks/astral_monolith_3"
+                    },
+                    {
+                        "path": "textures/blocks/astral_monolith_4"
+                    }
+                ]
+            }
+        },
+        "nova_slag": {
+            "textures": "textures/blocks/nova_slag"
+        },
+        "celestial_remains": {
+            "textures": "textures/blocks/celestial_remains"
+        },
+        "smooth_astral_stone": {
+            "textures": "textures/blocks/smooth_astral_stone"
+        },
+        "smooth_astral_monolith": {
+            "textures": "textures/blocks/smooth_astral_monolith"
+        },
+        "astral_bricks": {
+            "textures": "textures/blocks/astral_bricks"
+        },
+        "starforge_top": {
+            "textures": "textures/blocks/starforge_top"
+        },
+        "starforge_front": {
+            "textures": "textures/blocks/starforge_front"
+        },
+        "starforge_side": {
+            "textures": "textures/blocks/starforge_side"
+        },
+        "starforge_bottom": {
+            "textures": "textures/blocks/starforge_bottom"
+        },
+        "monolith_branches": {
+            "textures": "textures/blocks/monolith_branches"
+        },
+        "astral_block_top": {
+            "textures": "textures/blocks/astral_block_top"
+        },
+        "astral_block_side": {
+            "textures": "textures/blocks/astral_block_side"
+        },
+        "astral_block_bottom": {
+            "textures": "textures/blocks/astral_block_bottom"
+        },
+        "astral_cactus": {
+            "textures": "textures/blocks/astral_cactus"
+        },
+        "astral_cactus_top": {
+            "textures": "textures/blocks/astral_cactus_top"
+        },
+        "astral_cactus_side": {
+            "textures": "textures/blocks/astral_cactus_side"
+        },
+        "astral_cactus_bottom": {
+            "textures": "textures/blocks/astral_cactus_bottom"
+        }
+    }
+}

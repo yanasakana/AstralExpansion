@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.stardisk.idle": {
+			"loop": true,
+			"animation_length": 0.33333,
+			"bones": {
+				"bone2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0, -180, 0],
+						"0.3333": [0, -360, 0]
+					}
+				}
+			}
+		}
+	}
+}

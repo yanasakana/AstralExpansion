@@ -1,0 +1,119 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "astral:deus_ring_1",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:addrider": {
+        "entity_type": "astral:deus_turret"
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "deus_turret"
+        ],
+        "seats": {
+          "position": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 5 : 0"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "astral",
+          "boss",
+          "astrum_deus",
+          "mob"
+        ]
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:health": {
+        "value": 32767,
+        "max": 32767
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 0
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "subject": "other",
+                    "operator": "not",
+                    "value": "projectie"
+                  },
+                  {
+                    "test": "has_damage",
+                    "subject": "other",
+                    "operator": "not",
+                    "value": "magic"
+                  }
+                ]
+              },
+              "event": "damage_head"
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:breathable": {
+        "total_supply": 32767,
+        "suffocate_time": 32767,
+        "breathes_air": true,
+        "breathes_lava": true,
+        "breathes_water": true,
+        "breathes_solids": true
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    "events": {
+      "damage_head": {
+        "run_command": {
+          "command": [
+            "effect @e[type=astral:deus_head] instant_damage 1 0"
+          ]
+        }
+      }
+    }
+  }
+}

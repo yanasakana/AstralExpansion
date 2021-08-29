@@ -1,0 +1,23 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "astral:astral_clay_feature"
+		},
+		"count": 32,
+		"replace_rules": [
+			{
+				"places_block": "astral:astral_clay_block",
+				"may_replace": [
+					"astral:astral_dirt"
+				]
+			},
+			{
+				"places_block": "astral:astral_clay_block",
+				"may_replace": [
+					"astral:astral_grass"
+				]
+			}
+		]
+	}
+}

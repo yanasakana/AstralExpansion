@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "astral:astral_rose_item",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.flowers"
+			},
+			"minecraft:icon": {
+				"texture": "astral_rose_item"
+			},
+			"minecraft:block_placer": {
+				"block": "astral:astral_rose"
+			}
+		}
+	}
+}

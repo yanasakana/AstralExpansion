@@ -1,0 +1,13 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/astral_torch",
+    "atlas_tile": "astral_torch",
+    "ticks_per_frame": 100,
+    "frames": [ 0, 1 ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/starforge_front",
+    "atlas_tile": "starforge_front",
+    "ticks_per_frame": 20
+  }
+]

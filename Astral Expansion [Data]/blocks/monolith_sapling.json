@@ -1,0 +1,119 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "astral:monolith_sapling"
+    },
+    "components": {
+      "minecraft:destroy_time": 5,
+      "minecraft:map_color": "#2d243f",
+      "minecraft:breakonpush": true,
+      "minecraft:entity_collision": false,
+      "minecraft:geometry": "geometry.plant",
+      "minecraft:loot": "loot_tables/blocks/monolith_sapling.json",
+      "minecraft:block_light_absorption": 0,
+      
+      "minecraft:ticking": {
+        "looping": false,
+        "range": [
+          360,
+          1800
+        ],
+        "on_tick": {
+          "event": "grow"
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "astral:astral_grass",
+              "astral:astral_dirt"
+            ]
+          }
+        ]
+      },
+      "minecraft:material_instances": {
+				"*": {
+					"texture": "monolith_sapling",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			}
+    },
+    "events": {
+      "grow": {
+        "randomize": [
+          {
+            "weight": 9,
+            "run_command": {
+              "command": [
+                "structure load mystructure:astral_monolith_small ~-2 ~ ~-2 0_degrees"
+              ]
+            }
+          },
+          {
+            "weight": 9,
+            "run_command": {
+              "command": [
+                "structure load mystructure:astral_monolith_small ~-2 ~ ~-2 90_degrees"
+              ]
+            }
+          },
+          {
+            "weight": 9,
+            "run_command": {
+              "command": [
+                "structure load mystructure:astral_monolith_small ~-2 ~ ~-2 180_degrees"
+              ]
+            }
+          },
+          {
+            "weight": 9,
+            "run_command": {
+              "command": [
+                "structure load mystructure:astral_monolith_small ~-2 ~ ~-2 270_degrees"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": [
+                "structure load mystructure:astral_monolith_large ~-6 ~ ~-6 0_degrees"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": [
+                "structure load mystructure:astral_monolith_large ~-6 ~ ~-6 90_degrees"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": [
+                "structure load mystructure:astral_monolith_large ~-6 ~ ~-6 180_degrees"
+              ]
+            }
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": [
+                "structure load mystructure:astral_monolith_large ~-6 ~ ~-6 270_degrees"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

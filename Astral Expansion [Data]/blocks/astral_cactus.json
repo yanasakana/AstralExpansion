@@ -1,0 +1,61 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "astral:astral_cactus"
+    },
+    "components": {
+      "minecraft:destroy_time": 5,
+      "minecraft:map_color": "#80809e",
+      "minecraft:breakonpush": true,
+      "minecraft:loot": "loot_tables/blocks/astral_cactus.json",
+      "minecraft:geometry": "geometry.astral_cactus",
+      "minecraft:block_light_absorption": 0,
+      "minecraft:ticking": {
+        "looping": true,
+        "range": [
+          60,
+          360
+        ],
+        "on_tick": {
+          "event": "grow"
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "astral:astral_sand",
+              "astral:astral_cactus"
+            ]
+          }
+        ]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "astral_cactus",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true
+        }
+      }
+    },
+    "events": {
+      "grow": {
+        "randomize": [
+          {
+            "weight": 1,
+            "run_command": {
+              "command": [
+                "setblock ~ ~1 ~ astral:astral_cactus",
+                "fill ~ ~3 ~ ~ ~3 ~ air 0 replace astral:astral_cactus"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

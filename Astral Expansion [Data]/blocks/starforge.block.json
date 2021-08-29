@@ -1,0 +1,86 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+        "identifier": "astral:starforge",
+        "properties": {
+          "minecraft:direction": {}
+        }
+      },
+      "components": {
+        "minecraft:map_color": "#ed5d53",
+        "minecraft:destroy_time": 100.0,
+        "minecraft:block_light_emission": 0.4,
+        "minecraft:loot": "loot_tables/empty.json",
+        "minecraft:material_instances": {
+            "*": {
+              "texture": "starforge_side",
+              "render_method": "alpha_test"
+            },
+            "south": {
+              "texture": "starforge_front",
+              "render_method": "alpha_test"
+            },
+            "up": {
+              "texture": "starforge_top",
+              "render_method": "alpha_test"
+            },
+            "down": {
+              "texture": "starforge_bottom",
+              "render_method": "alpha_test"
+            }
+          },
+        "minecraft:on_player_placing": {
+          "event": "event:on_player_placing"
+        },
+        "minecraft:on_player_destroyed": {
+          "condition": "query.get_equipped_item_name == 'astral_pickaxe'",
+          "event": "event:on_player_destroyed"
+        },
+        "minecraft:crafting_table": {
+          "custom_description": "tile.astral:starforge.name",
+          "grid_size": 3,
+          "crafting_tags": [ "starforge" ]
+        },
+        "minecraft:unit_cube": {}
+      },
+      "permutations": [
+        {
+          "condition": "query.block_property('minecraft:direction') == 0",
+          "components": {
+            "minecraft:rotation": [0, 0, 0]
+          }
+        },
+        {
+          "condition": "query.block_property('minecraft:direction') == 1",
+          "components": {
+            "minecraft:rotation": [0, 180, 0]
+          }
+        },
+        {
+          "condition": "query.block_property('minecraft:direction') == 2",
+          "components": {
+            "minecraft:rotation": [0, 90, 0]
+          }
+        },
+        {
+          "condition": "query.block_property('minecraft:direction') == 3",
+          "components": {
+            "minecraft:rotation": [0, 270, 0]
+          }
+        }
+      ],
+      "events": {
+        "event:on_player_placing": {
+          "set_block_property": {
+            "minecraft:direction": "query.cardinal_facing_2d - 2"
+          }
+        },
+        "event:on_player_destroyed": {
+          "spawn_loot": {
+            "table": "loot_tables/blocks/starforge.json"
+          }
+        }
+      }
+    }
+  }

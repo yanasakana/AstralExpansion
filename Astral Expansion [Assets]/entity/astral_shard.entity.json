@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "astral:astral_shard",
+      "textures": {
+        "default": "textures/entity/projectiles/astral_shard"
+      },
+      "materials": {
+        "default": "arrow"
+      },
+      "geometry": {
+        "default": "geometry.astral_shard"
+      },
+      "animations": {
+        "aim": "animation.projectile.generic"
+      },
+      "scripts": {
+        "animate": [
+          "aim"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.arrow"
+      ]
+    }
+  }
+}

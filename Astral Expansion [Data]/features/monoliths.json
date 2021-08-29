@@ -1,0 +1,20 @@
+{
+	"format_version": "1.13.0",
+	
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "astral:monoliths"
+		},
+		
+		"features": [
+			["astral:monolith_large", 25],
+			["astral:monolith_large_90", 25],
+			["astral:monolith_large_180", 25],
+			["astral:monolith_large_270", 25],
+			["astral:monolith_small", 225],
+			["astral:monolith_small_90", 225],
+			["astral:monolith_small_180", 225],
+			["astral:monolith_small_270", 225]
+		]
+	}
+}

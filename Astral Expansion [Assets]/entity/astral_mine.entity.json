@@ -1,0 +1,19 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "astral:astral_mine",
+			"materials": {
+				"default": "phantom",
+				"invisible": "phantom_invisible"
+			},
+			"textures": {
+				"default": "textures/entity/astral_mine"
+			},
+			"geometry": {
+				"default": "geometry.astral_mine"
+			},
+			"render_controllers": [ "controller.render.phantom" ]
+		}
+	}
+}

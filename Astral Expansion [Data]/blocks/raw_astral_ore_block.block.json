@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "astral:raw_astral_ore_block",
+            "properties": {}
+        },
+        "components": {
+            "tag:InsertTag": {},
+            "minecraft:destroy_time": 2500,
+            "minecraft:explosion_resistance": 60,
+            "minecraft:map_color": "#ed5d53",
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:on_player_destroyed": {
+                "event": "minecraft:on_player_destroyed",
+                "condition": "query.get_equipped_item_name(0) == 'astral_pickaxe'"
+            }
+        },
+        "events": {
+            "minecraft:on_player_destroyed": {
+                "spawn_loot": {
+                    "table": "loot_tables/blocks/raw_astral_ore_block.json"
+                }
+            }
+        }
+    }
+}

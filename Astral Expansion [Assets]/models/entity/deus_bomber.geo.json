@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.deus_bomber",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-5, 5, -8], "size": [10, 6, 16], "uv": [0, 0]},
+						{"origin": [5, 6, -1], "size": [1, 4, 2], "uv": [10, 0]},
+						{"origin": [-6, 6, -1], "size": [1, 4, 2], "uv": [10, 0], "mirror": true},
+						{"origin": [5, 6, -6], "size": [1, 4, 3], "uv": [0, 7]},
+						{"origin": [-6, 6, -6], "size": [1, 4, 3], "uv": [0, 7], "mirror": true},
+						{"origin": [5, 6, 3], "size": [2, 4, 3], "uv": [0, 0]},
+						{"origin": [-7, 6, 3], "size": [2, 4, 3], "uv": [0, 0], "mirror": true},
+						{"origin": [-3, 11, -8], "size": [6, 1, 16], "uv": [0, 22]},
+						{"origin": [-3, 4, -8], "size": [6, 1, 16], "pivot": [0, 4.5, 0], "rotation": [180, 180, 0], "uv": [0, 22]},
+						{"origin": [-8, 7.5, -5], "size": [4, 1, 1], "pivot": [-5, 8.5, -4.5], "rotation": [0, -45, 0], "uv": [5, 7], "mirror": true},
+						{"origin": [5, 7.5, 4], "size": [5, 1, 1], "pivot": [5, 8, 4.5], "rotation": [0, 45, 0], "uv": [0, 14]},
+						{"origin": [-10, 7.5, 4], "size": [5, 1, 1], "pivot": [-5, 8, 4.5], "rotation": [0, -45, 0], "uv": [0, 14], "mirror": true},
+						{"origin": [4, 7.5, -5], "size": [4, 1, 1], "pivot": [5, 8, -4.5], "rotation": [0, 45, 0], "uv": [5, 7]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "astral:atlas",
+      "textures": {
+        "default": "textures/entity/atlas"
+      },
+      "materials": {
+        "default": "iron_golem"
+      },
+      "geometry": {
+        "default": "geometry.atlas"
+      },
+      "animations": {
+        "setup": "animation.atlas.idle",
+        "walk": "animation.atlas.walk",
+        "attack": "animation.atlas.attack"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          { "walk": "query.modified_move_speed" },
+          { "attack": "variable.attack_animation_tick > 0.0"}
+        ]
+      },
+      "render_controllers": [
+        "controller.render.iron_golem"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 57
+      }
+    }
+  }
+}

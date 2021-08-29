@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "bullshit_table"
+        ],
+        "pattern": [
+            "#",
+            "A"
+        ],
+        "key": {
+            "#": {
+                "item": "astral:stardust"
+            },
+            "A": {
+                "item": "astral:monolith_stick"
+            }
+        },
+        "result": {
+            "item": "minecraft:underwater_torch",
+            "count": 4
+        },
+        "description": {
+            "identifier": "astral:astral_torch"
+        }
+    }
+}

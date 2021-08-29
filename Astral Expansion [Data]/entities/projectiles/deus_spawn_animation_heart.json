@@ -1,0 +1,90 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "astral:deus_spawn_animation_heart",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:deus_spawn": {
+        "minecraft:transformation": {
+          "into": "astral:deus_head",
+          "drop_equipment": false,
+          "delay": {
+            "value": 0
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:timer": {
+        "time": [
+          5.0,
+          5.0
+        ],
+        "looping": false,
+        "time_down_event": {
+          "event": "minecraft:deus_spawn",
+          "target": "self"
+        }
+      },
+      "minecraft:type_family": {
+        "family": [
+          "astral",
+          "inanimate",
+          "spawn_anim"
+        ]
+      },
+      "minecraft:spell_effects": {
+        "add_effects": [
+          {
+            "effect": "levitation",
+            "duration": 6000,
+            "amplifier": 4
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/spawn_cancel.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 32767,
+        "max": 32767
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "run_command": {
+          "command": [
+            "execute @e[type=astral:deus_head] ~ ~ ~ kill @e[family=spawn_anim]"
+          ]
+        }
+      },
+      "minecraft:deus_spawn": {
+        "add": {
+          "component_groups": [
+            "minecraft:deus_spawn"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "astral_desert_hills"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 2.0
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "mountains"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "astral:astral_dirt",
+        "foundation_material": "astral:astral_stone",
+        "mid_material": "astral:astral_sandstone",
+        "top_material": "astral:astral_sand",
+        "sea_material": "minecraft:water"
+      },
+
+      "desert": {},
+      "hills": {},
+      "astral": {},
+      "overworld": {},
+      "rare": {}
+    }
+  }
+}

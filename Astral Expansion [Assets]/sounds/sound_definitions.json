@@ -1,0 +1,172 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"astral_beacon.orb_pulse": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/misc/AstralBeaconOrbPulse"
+			]
+		},
+		"astral_beacon.use": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/misc/AstralBeaconUse"
+			]
+		},
+		"mob.aureus.idle": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/aureus/AstrumAureusIdle"
+			]
+		},
+		"mob.aureus.hit": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/aureus/AstrumAureusHit"
+			]
+		},
+		"mob.aureus.death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/aureus/AstrumAureusDeath"
+			]
+		},
+		"mob.astral.idle": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/astral/AstralEnemyIdle"
+			]
+		},
+		"mob.astral.hit": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/astral/AstralEnemyHit",
+				"sounds/mob/astral/AstralEnemyHit2",
+				"sounds/mob/astral/AstralEnemyHit3"
+			]
+		},
+		"mob.astral.death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/astral/AstralEnemyDeath"
+			]
+		},
+		"mob.atlas.death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/atlas/AtlasDeath"
+			]
+		},
+		"mob.atlas.attack": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/atlas/AtlasSwing"
+			]
+		},
+		"mob.atlas.step": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/atlas/LegStomp"
+			]
+		},
+		"mob.deus.hit": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/deus/StoneHit"
+			]
+		},
+		"mob.deus.hit_hard": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/deus/OtherworldlyHit"
+			]
+		},
+		"mob.deus.death": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/deus/AstrumDeusDeath"
+			]
+		},
+		"mob.deus.spawn": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/deus/AstrumDeusSpawn"
+			]
+		},
+		"mob.atlas.hit": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/atlas/AtlasHurt0",
+				"sounds/mob/atlas/AtlasHurt1",
+				"sounds/mob/atlas/AtlasHurt2"
+			]
+		},
+		"mob.atlas.idle": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mob/atlas/AtlasIdle0",
+				"sounds/mob/atlas/AtlasIdle1"
+			]
+		},
+		"music.pest_of_the_cosmos": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/music/pest_of_the_cosmos",
+					"stream": true,
+					"volume": 0.3
+				}
+			]
+		},
+		"music.interstellar_stomper": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/music/interstellar_stomper",
+					"stream": true,
+					"volume": 0.3
+				}
+			]
+		},
+		"music.open_frenzy": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/music/open_frenzy",
+					"stream": true,
+					"volume": 0.3
+				}
+			]
+		},
+		"music.scourge_of_the_universe": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/music/scourge_of_the_universe",
+					"stream": true,
+					"volume": 0.3
+				}
+			]
+		},
+		"music.the_heaven_sent_abomination": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/music/the_heaven_sent_abomination",
+					"stream": true,
+					"volume": 0.3
+				}
+			]
+		},
+		"music.treasures_within_the_abomination": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/music/treasures_within_the_abomination",
+					"stream": true,
+					"volume": 0.3
+				}
+			]
+		}
+	}
+}

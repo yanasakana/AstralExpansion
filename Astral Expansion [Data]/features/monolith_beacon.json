@@ -1,0 +1,26 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "astral:monolith_beacon"
+		},
+
+		"structure_name": "mystructure:astral_monolith_beacon",
+
+		"facing_direction": "random",
+		"constraints": {
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"astral:astral_grass",
+					"astral:astral_dirt",
+					"astral:astral_sand",
+					"astral:astral_snow",
+					"astral:astral_stone"
+				]
+			},
+			"grounded": {}
+		},
+		"adjustment_radius": 16
+	}
+}

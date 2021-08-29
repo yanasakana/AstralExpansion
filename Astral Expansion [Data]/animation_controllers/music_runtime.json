@@ -1,0 +1,136 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.music_runtime": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/stopsound @s music.interstellar_stomper",
+						"/stopsound @s music.pest_of_the_cosmos",
+						"/stopsound @s music.open_frenzy",
+						"/stopsound @s music.scourge_of_the_universe",
+						"/stopsound @s music.the_heaven_sent_abomination",
+						"/stopsound @s music.treasures_within_the_abomination",
+						"v.time = q.time_stamp;",
+						"/fog @s remove fog_astral"
+					],
+					"transitions": [
+						{
+							"astrum_deus_music": "query.scoreboard('boss_music')==1 && query.is_alive"
+						},
+						{
+							"astrum_aureus_music": "query.scoreboard('boss_music')==2 && query.is_alive"
+						},
+						{
+							"wither_music": "query.scoreboard('boss_music')==3 && query.is_alive"
+						},
+						{
+							"ender_dragon_music": "query.scoreboard('boss_music')==4 && query.is_alive"
+						},
+						{
+							"astral_biome_music": "query.biome_has_any_tag('astral') && query.position(1)>55 && query.scoreboard('boss_music')==0"
+						},
+						{
+							"astral_underground_music": "query.biome_has_any_tag('astral') && query.position(1)<55 && query.scoreboard('boss_music')==0"
+						},
+						{
+							"stop_all_music": "query.scoreboard('boss_music')==5"
+						}
+					]
+				},
+				"astrum_deus_music": {
+					"on_entry": [
+						"/stopsound @s music.the_heaven_sent_abomination",
+						"/stopsound @s music.treasures_within_the_abomination",
+						"/playsound music.pest_of_the_cosmos @p",
+						"v.time = q.time_stamp;"
+					],
+					"transitions": [
+						{
+							"default": "query.time_stamp>v.time+2237 || !query.scoreboard('boss_music')==1 || !query.is_alive"
+						}
+					]
+				},
+				"astrum_aureus_music": {
+					"on_entry": [
+						"/stopsound @s music.the_heaven_sent_abomination",
+						"/stopsound @s music.treasures_within_the_abomination",
+						"/playsound music.interstellar_stomper @p",
+						"v.time = q.time_stamp;"
+					],
+					"transitions": [
+						{
+							"default": "query.time_stamp>v.time+2936 || !query.scoreboard('boss_music')==2 || !query.is_alive"
+						}
+					]
+				},
+				"wither_music": {
+					"on_entry": [
+						"/stopsound @s music.the_heaven_sent_abomination",
+						"/stopsound @s music.treasures_within_the_abomination",
+						"/playsound music.open_frenzy @p",
+						"v.time = q.time_stamp;"
+					],
+					"transitions": [
+						{
+							"default": "query.time_stamp>v.time+2682 || !query.scoreboard('boss_music')==3 || !query.is_alive"
+						}
+					]
+				},
+				"ender_dragon_music": {
+					"on_entry": [
+						"/stopsound @s music.the_heaven_sent_abomination",
+						"/stopsound @s music.treasures_within_the_abomination",
+						"/playsound music.scourge_of_the_universe @p",
+						"v.time = q.time_stamp;"
+					],
+					"transitions": [
+						{
+							"default": "query.time_stamp>v.time+4389 || !query.scoreboard('boss_music')==4 || !query.is_alive"
+						}
+					]
+				},
+				"astral_biome_music": {
+					"on_entry": [
+						"/fog @s push astral:fog_astral fog_astral",
+						"/playsound music.the_heaven_sent_abomination @p",
+						"v.time = q.time_stamp;"
+					],
+					"transitions": [
+						{
+							"default": "query.time_stamp>v.time+3168 || !query.biome_has_any_tag('astral') || query.position(1)<55 || !query.scoreboard('boss_music')==0"
+						}
+					]
+				},
+				"astral_underground_music": {
+					"on_entry": [
+						"/fog @s push astral:fog_astral fog_astral",
+						"/playsound music.treasures_within_the_abomination @p",
+						"v.time = q.time_stamp;"
+					],
+					"transitions": [
+						{
+							"default": "query.time_stamp>v.time+4452 || !query.biome_has_any_tag('astral') || query.position(1)>55 || !query.scoreboard('boss_music')==0"
+						}
+					]
+				},
+				"stop_all_music": {
+					"on_entry": [
+						"/stopsound @s music.interstellar_stomper",
+						"/stopsound @s music.pest_of_the_cosmos",
+						"/stopsound @s music.open_frenzy",
+						"/stopsound @s music.scourge_of_the_universe",
+						"/stopsound @s music.the_heaven_sent_abomination",
+						"/stopsound @s music.treasures_within_the_abomination",
+						"/scoreboard players set @a boss_music 0"
+					],
+					"transitions": [
+						{
+							"default": "query.scoreboard('boss_music')==0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,116 @@
+{
+  "biomes": {
+    "astral_river": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_ice_plains_spikes": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_ice_plains": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_ice_mountains": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_extreme_hills_edge": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_extreme_hills_mutated": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_extreme_hills": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_plains": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_desert": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_forest": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_desert_mutated": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_forest_hills": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_extreme_hills_plus_trees": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_extreme_hills_plus_trees_mutated": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_flower_forest": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    },
+    "astral_desert_hills": {
+      "fog_identifier" : "astral:fog_astral",
+      "fog_ids_to_merge" : [ "astral:fog_astral" ],
+      "inherit_from_prior_fog" : false,
+      "water_surface_color": "#80809e",
+      "water_fog_color": "#324363"
+    }
+  }
+}

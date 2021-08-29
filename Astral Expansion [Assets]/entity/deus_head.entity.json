@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "astral:deus_head",
+			"materials": {
+				"default": "phantom",
+				"invisible": "phantom_invisible"
+			},
+			"textures": {
+				"default": "textures/entity/deus_head"
+			},
+			"geometry": {
+				"default": "geometry.deus_head"
+			},
+			"animations": {
+				"setup1": "animation.deus_head.idle"
+			},
+			"scripts": {
+				"animate": [
+					"setup1"
+				]
+			},
+			"render_controllers": [ "controller.render.phantom" ],
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 51
+			}
+		}
+	}
+}

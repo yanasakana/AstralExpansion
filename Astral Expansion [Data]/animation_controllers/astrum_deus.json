@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.deus_worming": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/function deus_worming"
+					],
+					"transitions": [
+						{
+							"worming": "query.is_alive"
+						}
+					]
+				},
+				"worming": {
+					"on_entry": [
+						"/function deus_worming"
+					],
+                    "transitions": [
+						{
+							"default": "query.is_alive"
+						}
+					]
+				}
+			}
+		},
+        "controller.animation.deus_death": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"death": {
+					"on_entry": [
+						"/function deus_death"
+					]
+				}
+			}
+		},
+        "controller.animation.deus_spawn": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"spawn": "query.is_alive"
+						}
+					]
+				},
+				"spawn": {
+					"on_entry": [
+						"/function deus_spawn"
+					]
+				}
+			}
+		}
+	}
+}

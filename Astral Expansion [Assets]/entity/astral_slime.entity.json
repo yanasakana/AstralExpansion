@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "astral:astral_slime",
+      "materials": {
+        "default": "slime",
+        "outer": "slime_outer"
+      },
+      "textures": {
+        "default": "textures/entity/astral_slime"
+      },
+      "geometry": {
+        "default": "geometry.slime",
+        "armor": "geometry.slime.armor"
+      },
+      "render_controllers": [
+        "controller.render.slime",
+        "controller.render.slime_armor"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 10
+      }
+    }
+  }
+}

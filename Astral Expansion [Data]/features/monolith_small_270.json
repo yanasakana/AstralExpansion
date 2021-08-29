@@ -1,0 +1,23 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "astral:monolith_small_270"
+		},
+
+		"structure_name": "mystructure:astral_monolith_small_270",
+
+		"facing_direction": "random",
+		"constraints": {
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"astral:astral_grass",
+					"astral:astral_dirt"
+				]
+			},
+			"grounded": {}
+		},
+		"adjustment_radius": 16
+	}
+}

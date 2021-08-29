@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "astral_plains"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.4,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.8
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "lowlands"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "astral:astral_dirt",
+        "foundation_material": "astral:astral_stone",
+        "mid_material": "astral:astral_dirt",
+        "top_material": "astral:astral_grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": [
+          [ "astral_forest_hills", 1 ],
+          [ "astral_forest", 2 ]
+        ],
+        "mutate_transformation": "astral_flower_forest",
+        "generate_for_climates": [
+          [ "medium", 3 ],
+          [ "warm", 1 ],
+          [ "cold", 1 ]
+        ]
+      },
+
+      "astral": {},
+      "overworld": {},
+      "plains": {},
+      "rare": {}
+    }
+  }
+}

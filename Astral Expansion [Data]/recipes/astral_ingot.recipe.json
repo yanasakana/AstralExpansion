@@ -1,0 +1,44 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "tags": [
+            "starforge"
+        ],
+        "ingredients": [
+            {
+                "item": "astral:raw_astral_ore"
+            },
+            {
+                "item": "astral:raw_astral_ore"
+            },
+            {
+                "item": "astral:raw_astral_ore"
+            },
+            {
+                "item": "astral:stardust"
+            },
+            {
+                "item": "astral:stardust"
+            },
+            {
+                "item": "minecraft:quartz"
+            },
+            {
+                "item": "minecraft:diamond"
+            },
+            {
+                "item": "minecraft:emerald"
+            },
+            {
+                "item": "minecraft:amethyst_shard"
+            }
+        ],
+        "result": {
+            "item": "astral:astral_ingot",
+            "count": 1
+        },
+        "description": {
+            "identifier": "astral:astral_ingot"
+        }
+    }
+}

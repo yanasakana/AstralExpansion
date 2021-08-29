@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "astral:astrum_aureus",
+      "textures": {
+        "default": "textures/entity/astrum_aureus"
+      },
+      "materials": {
+        "default": "ravager"
+      },
+      "geometry": {
+        "default": "geometry.astrum_aureus"
+      },
+      "animations": {
+        "setup": "animation.astrum_aureus.idle",
+        "walk": "animation.astrum_aureus.walk",
+        "attack": "animation.astrum_aureus.attack"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          { "walk": "query.modified_move_speed" },
+          { "attack": "variable.attack_animation_tick > 0.0"}
+        ]
+      },
+      "render_controllers": [
+        "controller.render.ravager"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 57
+      }
+    }
+  }
+}

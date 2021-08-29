@@ -1,0 +1,17 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "astral:astral_dirt_feature"
+		},
+		"count": 24,
+		"replace_rules": [
+			{
+				"places_block": "astral:astral_dirt",
+				"may_replace": [
+					"astral:astral_stone"
+				]
+			}
+		]
+	}
+}

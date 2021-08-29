@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "astral:monolith_branches",
+            "properties": {}
+        },
+        "components": {
+            "tag:InsertTag": {},
+            "minecraft:destroy_time": 9,
+            "minecraft:material_instances": {
+				"*": {
+					"texture": "monolith_branches",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0,
+            "minecraft:explosion_resistance": 60,
+            "minecraft:map_color": "#3b324d",
+            "minecraft:loot": "loot_tables/blocks/monolith_branches.json",
+            "minecraft:flammable": {
+				"burn_odds": 1,
+				"flame_odds": 2
+			}
+        }
+    }
+}

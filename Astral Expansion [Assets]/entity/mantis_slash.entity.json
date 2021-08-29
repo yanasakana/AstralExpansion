@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "astral:mantis_slash",
+      "textures": {
+        "default": "textures/entity/projectiles/mantis_slash"
+      },
+      "materials": {
+        "default": "arrow"
+      },
+      "geometry": {
+        "default": "geometry.mantis_slash"
+      },
+      "animations": {
+        "setup": "animation.mantis_slash.idle",
+        "aim": "animation.projectile.generic"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          "aim"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.arrow"
+      ]
+    }
+  }
+}

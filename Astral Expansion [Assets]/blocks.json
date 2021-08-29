@@ -1,0 +1,139 @@
+{
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "astral:astral_stone": {
+        "sound": "stone",
+        "textures": "astral_stone"
+    },
+    "astral:astral_terracotta": {
+        "sound": "stone",
+        "textures": "astral_terracotta"
+    },
+    "astral:smooth_astral_stone": {
+        "sound": "stone",
+        "textures": "smooth_astral_stone"
+    },
+    "astral:astral_sandstone": {
+        "sound": "stone",
+        "textures": "astral_sandstone"
+    },
+    "astral:astral_sand": {
+        "sound": "sand",
+        "textures": "astral_sand"
+    },
+    "astral:astral_snow": {
+        "isotropic": true,
+        "sound": "snow",
+        "textures": "astral_snow"
+    },
+    "astral:astral_ore": {
+        "isotropic": true,
+        "sound": "amethyst_block",
+        "textures": "astral_ore"
+    },
+    "astral:raw_astral_ore_block": {
+        "isotropic": true,
+        "sound": "copper",
+        "textures": "raw_astral_ore_block"
+    },
+    "astral:astral_ice": {
+        "sound": "glass",
+        "textures": "astral_ice"
+    },
+    "astral:astral_dirt": {
+        "isotropic": true,
+        "sound": "gravel",
+        "textures": "astral_dirt"
+    },
+    "astral:astral_clay_block": {
+        "sound": "gravel",
+        "textures": "astral_clay"
+    },
+    "astral:astral_monolith": {
+        "sound": "wood",
+        "textures": "astral_monolith"
+    },
+    "astral:smooth_astral_monolith": {
+        "sound": "wood",
+        "textures": "smooth_astral_monolith"
+    },
+    "astral:monolith_branches": {
+        "sound": "gravel",
+        "textures": "monolith_branches"
+    },
+    "astral:astral_tulip": {
+        "sound": "grass",
+        "textures": "astral_tulip"
+    },
+    "astral:astral_bricks": {
+        "sound": "stone",
+        "textures": "astral_bricks"
+    },
+    "astral:astral_rose": {
+        "sound": "grass",
+        "textures": "astral_rose"
+    },
+    "astral:astral_beacon": {
+        "sound": "metal",
+        "textures": "astral_beacon"
+    },
+    "astral:astral_tallgrass": {
+        "sound": "grass",
+        "textures": "astral_tallgrass"
+    },
+    "astral:monolith_sapling": {
+        "sound": "gravel",
+        "textures": "monolith_sapling"
+    },
+    "astral:nova_slag": {
+        "isotropic": true,
+        "sound": "gravel",
+        "textures": "nova_slag"
+    },
+    "astral:celestial_remains": {
+        "isotropic": true,
+        "sound": "gravel",
+        "textures": "celestial_remains"
+    },
+    "minecraft:underwater_torch": {
+        "blockshape": "torch",
+        "sound": "wood",
+        "textures": "astral_torch"
+    },
+    "underwater_torch": {
+        "blockshape": "torch",
+        "sound": "wood",
+        "textures": "astral_torch"
+    },
+    "astral:astral_grass": {
+        "isotropic": {
+            "down": true,
+            "up": true
+        },
+        "textures": {
+            "up": "astral_grass_top",
+            "down": "astral_dirt",
+            "side": "astral_grass_side"
+        },
+        "sound": "gravel"
+    },
+    "astral:astral_cactus": {
+        "textures": {
+            "up": "astral_cactus_top",
+            "down": "astral_cactus_bottom",
+            "side": "astral_cactus_side"
+        },
+        "sound": "gravel"
+    },
+    "astral:astral_block": {
+        "textures": {
+            "up": "astral_block_top",
+            "down": "astral_block_bottom",
+            "side": "astral_block_side"
+        },
+        "sound": "copper"
+    }
+}

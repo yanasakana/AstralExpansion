@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "astral:astral_chunk",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.nature"
+			},
+			"minecraft:icon": {
+				"texture": "astral_chunk"
+			},
+			"minecraft:display_name": {
+				"value": "Astral Chunk"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "special"
+				}
+			},
+			"minecraft:max_stack_size": 1
+		},
+		"events": {
+			"special": {
+				"run_command": {
+					"command": [
+						"summon astral:astrum_aureus",
+						"clear @p astral:astral_chunk 0 1"
+					]
+				}
+			}
+		}
+	}
+}

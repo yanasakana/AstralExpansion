@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "starforge"
+        ],
+        "pattern": [
+            "aa",
+            "Aa",
+            "A "
+        ],
+        "key": {
+            "a": {
+                "item": "astral:astral_ingot"
+            },
+            "A": {
+                "item": "astral:monolith_stick"
+            }
+        },
+        "result": {
+            "item": "astral:astral_axe",
+            "count": 1
+        },
+        "description": {
+            "identifier": "astral:astral_axe"
+        }
+    }
+}

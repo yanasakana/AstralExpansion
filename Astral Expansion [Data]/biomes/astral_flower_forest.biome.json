@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "astral_flower_forest"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.80,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.7
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 0.1, 0.4 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "astral:astral_dirt",
+        "foundation_material": "astral:astral_stone",
+        "mid_material": "astral:astral_dirt",
+        "top_material": "astral:astral_grass",
+        "sea_material": "minecraft:water"
+      },
+
+      "flower_forest": {},
+      "astral": {},
+      "mutated": {},
+      "monolith": {},
+      "overworld": {},
+      "rare": {}
+    }
+  }
+}

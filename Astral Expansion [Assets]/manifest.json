@@ -1,0 +1,29 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Astral Expansion (Resources)",
+        "description": "@VinniSauce @yanasakanadev",
+        "uuid": "cfca8ecc-30ea-42fe-a69e-fa2f8201be25",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            17,
+            10
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "bc9de0b6-723e-4a7d-b030-51f86c54694f",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

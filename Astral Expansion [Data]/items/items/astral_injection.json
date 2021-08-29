@@ -1,0 +1,52 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "astral:astral_injection",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.potions"
+			},
+			"minecraft:display_name": {
+				"value": "Astral Injection"
+			},
+			"minecraft:icon": {
+				"texture": "astral_injection"
+			},
+			"minecraft:use_duration": 3.6,
+			"minecraft:food": {
+				"nutrition": 0,
+				"saturation_modifier": "poor",
+				"can_always_eat": true,
+				"on_consume": {
+					"event": "on_consume",
+					"target": "self"
+				}
+			},
+			"minecraft:use_animation": "bow"
+		},
+		"events": {
+			"on_consume": {
+				"add_mob_effect": {
+					"effect": "strength",
+					"duration": 600.0,
+					"amplifier": 2,
+					"target": "holder"
+				},
+				"run_command": {
+					"command": [
+						"effect @s speed 600 1",
+						"effect @s hunger 600 1"
+					]
+				},
+				"damage": {
+					"type": "magic",
+					"amount": 10,
+					"target": "holder"
+				}
+			}
+		}
+	}
+}

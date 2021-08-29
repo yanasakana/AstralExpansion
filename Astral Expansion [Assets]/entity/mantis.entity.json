@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "astral:mantis",
+      "textures": {
+        "default": "textures/entity/mantis"
+      },
+      "materials": {
+        "default": "iron_golem"
+      },
+      "geometry": {
+        "default": "geometry.mantis"
+      },
+      "animations": {
+        "setup": "animation.mantis.idle",
+        "walk": "animation.mantis.walking",
+        "attack": "animation.mantis.attack"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          { "walk": "query.modified_move_speed" },
+          { "attack": "variable.attack_time > 0.0"}
+        ]
+      },
+      "render_controllers": [
+        "controller.render.iron_golem"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 57
+      }
+    }
+  }
+}
