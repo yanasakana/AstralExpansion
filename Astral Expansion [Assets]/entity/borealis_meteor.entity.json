@@ -1,0 +1,19 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "astral:borealis_meteor",
+			"materials": {
+				"default": "phantom",
+				"invisible": "phantom_invisible"
+			},
+			"textures": {
+				"default": "textures/entity/projectiles/astral_meteor"
+			},
+			"geometry": {
+				"default": "geometry.astral_meteor"
+			},
+			"render_controllers": [ "controller.render.default" ]
+		}
+	}
+}

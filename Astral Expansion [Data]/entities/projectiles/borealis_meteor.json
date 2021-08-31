@@ -1,0 +1,112 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "astral:borealis_meteor",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "snowball"
+		},
+		"component_groups": {
+			"minecraft:exploding": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 3,
+					"causes_fire": true,
+					"destroy_affected_by_griefing": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"inanimate",
+					"borealis"
+				]
+			},
+			"minecraft:nameable": {
+				"allow_name_tag_renaming": false
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false,
+					"on_damage": {
+						"event": "minecraft:explode"
+					}
+				}
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80.0,
+					"max_dropped_ticks": 10,
+					"use_motion_prediction_hints": true
+				}
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": 5,
+				"time_down_event": {
+					"event": "minecraft:explode",
+					"target": "self"
+				}
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": [
+							1,
+							2
+						],
+						"knockback": true,
+						"semi_random_diff_damage": false,
+						"destroy_on_hit": true
+					},
+					"definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "minecraft:explode",
+							"target": "self"
+						}
+					}
+				},
+				"hit_sound": "item.trident.hit",
+				"power": 1.5,
+				"gravity": 0.01,
+				"uncertainty_base": 1,
+				"uncertainty_multiplier": 1,
+				"anchor": 1,
+				"should_bounce": true,
+				"offset": [
+					0,
+					-0.1,
+					0
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.5,
+				"height": 0.5
+			}
+		},
+		"events": {
+			"minecraft:explode": {
+				"add": {
+					"component_groups": [
+						"minecraft:exploding"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "astral:borealis_bomber",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "updateDurability"
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "borealisBomber",
+                "duration": 5
+            },
+            "minecraft:icon": {
+                "texture": "borealis_bomber"
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "astral:astral_ingot"
+                        ],
+                        "repair_amount": "query.max_durability"
+                    }
+                ]
+            },
+            "minecraft:durability": {
+                "max_durability": 3560,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 5,
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "updateItem"
+                }
+            }
+        },
+        "events": {
+            "updateItem": {
+                "shoot": {
+                    "projectile": "astral:borealis_meteor",
+                    "launch_power": 1
+                },
+                "trigger": {
+                    "event": "updateDurability"
+                },
+                // Dummy Command, add later
+                "run_command": {
+                    "command": [
+                        "clear @s air 0 1"
+                    ]
+                }
+            },
+            "updateDurability": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 1,
+                    "target": "self"
+                }
+            }
+        }
+    }
+}
