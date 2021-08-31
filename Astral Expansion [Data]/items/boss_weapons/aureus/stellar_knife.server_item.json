@@ -1,0 +1,69 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "astral:stellar_knife",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "updateDurability"
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "stellarKnife",
+                "duration": 0.75
+            },
+            "minecraft:icon": {
+                "texture": "stellar_knife"
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "astral:astral_ingot"
+                        ],
+                        "repair_amount": "query.max_durability"
+                    }
+                ]
+            },
+            "minecraft:durability": {
+                "max_durability": 3560,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:damage": 6,
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "updateItem"
+                }
+            }
+        },
+        "events": {
+            "updateItem": {
+                "shoot": {
+                    "projectile": "astral:knife_thrown",
+                    "launch_power": 1
+                },
+                "trigger": {
+                    "event": "updateDurability"
+                }
+            },
+            "updateDurability": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 1,
+                    "target": "self"
+                }
+            }
+        }
+    }
+}
