@@ -6,11 +6,6 @@
             "category": "equipment"
         },
         "components": {
-            "minecraft:weapon": {
-                "on_hurt_entity": {
-                    "event": "updateDurability"
-                }
-            },
             "minecraft:cooldown": {
                 "category": "borealisBomber",
                 "duration": 5
@@ -25,7 +20,7 @@
                 "repair_items": [
                     {
                         "items": [
-                            "astral:astral_ingot"
+                            "astral:aureus_cell"
                         ],
                         "repair_amount": "query.max_durability"
                     }
@@ -55,12 +50,6 @@
                 },
                 "trigger": {
                     "event": "updateDurability"
-                },
-                // Dummy Command, add later
-                "run_command": {
-                    "command": [
-                        "clear @s air 0 1"
-                    ]
                 }
             },
             "updateDurability": {

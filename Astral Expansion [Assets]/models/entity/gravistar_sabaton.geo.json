@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.gravistar_sabaton",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "boots",
+					"pivot": [2, 0, 2],
+					"cubes": [
+						{"origin": [1, 0, -4], "size": [5, 3, 7], "uv": [0, 0]},
+						{"origin": [1, 3, -2], "size": [5, 4, 5], "uv": [0, 10]}
+					]
+				},
+				{
+					"name": "boots2",
+					"pivot": [-4, 0, 2],
+					"cubes": [
+						{"origin": [-5, 0, -4], "size": [5, 3, 7], "uv": [0, 0], "mirror": true},
+						{"origin": [-5, 3, -2], "size": [5, 4, 5], "uv": [0, 10], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

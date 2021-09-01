@@ -1,0 +1,37 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.regulus_thrown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "regulus",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 0, -3], "size": [6, 3, 6], "uv": [0, 11]},
+						{"origin": [-3, 1, -3], "size": [6, 1, 6], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [12, 0]},
+						{"origin": [-6, 1, -2], "size": [1, 1, 4], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [0, 0]},
+						{"origin": [-5, 1, -6], "size": [1, 1, 10], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [0, 0]},
+						{"origin": [-4, 1, 2], "size": [1, 1, 3], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [0, 5]},
+						{"origin": [-3, 1, 4], "size": [1, 1, 2], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [0, 11]},
+						{"origin": [-6, 1, -7], "size": [1, 1, 2], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [12, 0]},
+						{"origin": [-2, 1, 5], "size": [1, 1, 1], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [0, 14]},
+						{"origin": [-6, 1, -7], "size": [1, 1, 2], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [12, 0]},
+						{"origin": [-6, 1, -2], "size": [1, 1, 4], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [0, 0]},
+						{"origin": [-5, 1, -6], "size": [1, 1, 10], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [0, 0]},
+						{"origin": [-4, 1, 2], "size": [1, 1, 3], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [0, 5]},
+						{"origin": [-2, 1, 5], "size": [1, 1, 1], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [0, 14]},
+						{"origin": [-3, 1, 4], "size": [1, 1, 2], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [0, 11]}
+					]
+				}
+			]
+		}
+	]
+}

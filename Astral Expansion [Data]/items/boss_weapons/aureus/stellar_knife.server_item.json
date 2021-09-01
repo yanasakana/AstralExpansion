@@ -6,11 +6,6 @@
             "category": "equipment"
         },
         "components": {
-            "minecraft:weapon": {
-                "on_hurt_entity": {
-                    "event": "updateDurability"
-                }
-            },
             "minecraft:cooldown": {
                 "category": "stellarKnife",
                 "duration": 0.75
@@ -25,7 +20,7 @@
                 "repair_items": [
                     {
                         "items": [
-                            "astral:astral_ingot"
+                            "astral:aureus_cell"
                         ],
                         "repair_amount": "query.max_durability"
                     }
