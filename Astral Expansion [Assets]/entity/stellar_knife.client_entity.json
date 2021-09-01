@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "astral:stellar_knife",
+      "textures": {
+        "default": "textures/entity/projectiles/stellar_knife"
+      },
+      "materials": {
+        "default": "arrow"
+      },
+      "geometry": {
+        "default": "geometry.stellar_knife"
+      },
+      "animations": {
+        "aim": "animation.projectile.generic"
+      },
+      "scripts": {
+        "animate": [
+          "aim"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}
