@@ -2,7 +2,7 @@
 	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "astral:astral_knife",
+			"identifier": "astral:knife_thrown",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -23,7 +23,7 @@
 			"minecraft:type_family": {
 				"family": [
 					"inanimate",
-					"astral_knife",
+					"stellar_knife",
 					"a_fuckin_knife"
 				]
 			},
