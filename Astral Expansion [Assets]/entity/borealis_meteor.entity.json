@@ -8,7 +8,7 @@
 				"invisible": "phantom_invisible"
 			},
 			"textures": {
-				"default": "textures/entity/projectiles/astral_meteor"
+				"default": "textures/entity/projectiles/borealis_meteor"
 			},
 			"geometry": {
 				"default": "geometry.astral_meteor"
