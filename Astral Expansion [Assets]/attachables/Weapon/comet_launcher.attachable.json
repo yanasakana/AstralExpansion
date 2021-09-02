@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "astral:comet_launcher",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "textures/entity/weapons/comet_launcher",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.comet_launcher"
+            },
+            "animations": {
+                "shoot": "animation.humanoid.fire_3d_weaponshoot"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "shoot": "query.main_hand_item_use_duration > 0.0f"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.item_default"
+            ]
+        }
+    }
+}
